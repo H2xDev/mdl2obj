@@ -6,9 +6,14 @@ A tool made for [GodotVMF](https://github.com/h2xdev/GodotVMF). This tool based 
 
 ## Build
 ```
+npm install
+
 npm run build
-# yarn build
+
+# macOS
+npm run build:macos
+
+# linux
+npm run build:linux
 ```
 
-# Known issues
-- Need to add build for linux/macOS

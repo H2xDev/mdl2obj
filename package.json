@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx pkg index.js -t node18-win-x64 -o mdl2obj.exe"
+    "build": "npx pkg index.js -t node18-win -o mdl2obj",
+    "build:macos": "npx pkg index.js -t node18-macos -o mdl2obj",
+    "build:linux": "npx pkg index.js -t node18-linux -o mdl2obj"
   },
   "author": "H2xDev, lordvonadel",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "source-mdl": "^0.2.4"
+  }
 }

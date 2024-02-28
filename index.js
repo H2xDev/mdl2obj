@@ -1,7 +1,13 @@
-const MDL = require('./src/MDL.js');
+const MDL = require('source-mdl/src/MDL.js');
 const fs = require('fs');
 
 const [,, input, output] = process.argv;
+
+if (!input) {
+  throw new Error('Specify the model path');
+}
+
+output = output || input.replace('.mdl', '.obj');
 
 console.log(`Converting ${input} to ${output}`);
 
