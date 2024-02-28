@@ -1,7 +1,8 @@
 const MDL = require('source-mdl/src/MDL.js');
 const fs = require('fs');
 
-const [,, input, output] = process.argv;
+const [,, input] = process.argv;
+let [,,, output] = process.argv;
 
 if (!input) {
   throw new Error('Specify the model path');
